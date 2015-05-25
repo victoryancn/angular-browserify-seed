@@ -1,0 +1,13 @@
+<md-button class="md-button-toggle" ng-class="{false:'nav-child'}[!!item.main]"
+           href="{{ item.url }}"
+           target="{{ item.target }}" ng-click="toggleSection(item,$index,$event)">
+  <i class="{{ item.iconClasses }}"></i>
+  <span ng-class="{true:'active'}[item.active]">{{ item.label }}</span>
+  <span class="pull-right" ng-bind-html="item.html"></span>
+  <span class="pull-right" ng-show="!!item.main&&item.children.length" >
+    <i class="fa fa-chevron-up md-toggle-icon" ng-class="{true:'toggled',false:''}[!!item.toggled]"></i>
+  </span>
+</md-button>
+<ul ng-if="item.children.length"  ng-show="item.toggled" class="toggled-section menu-toggle-list">
+  <li ng-repeat="item in item.children"  ng-include="'app/nav/nav_renderer.html'"></li>
+</ul>

@@ -1,0 +1,105 @@
+.index-side-bar{
+  md-sidenav{
+    min-width: 250px;
+    width: 250px;
+  }
+  md-content{
+    padding:0px;
+  }
+  ul{
+    padding: 0px;
+    margin: 0px;
+  }
+  a{
+    border-radius: 0;
+    color: inherit;
+    cursor: pointer;
+    display: block;
+    line-height: 40px;
+    margin: 0;
+    max-height: 40px;
+    overflow: hidden;
+    padding: 0px 16px;
+    text-align: left;
+    text-decoration: none;
+    white-space: normal;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+  }
+  .md-button.md-nav-theme{
+    border-radius: 0;
+  }
+  .nav-child{
+    display: block;
+    font-weight: 400;
+    padding: 0 16px 0 32px;
+    text-transform: none;
+    font-weight: 400;
+    .active {
+      color: rgb(152,155,164);
+    }
+  }
+  .button-toggle{
+    display: block;
+    margin-left: auto;
+    speak: none;
+    vertical-align: middle;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  }
+  .toggled-section .ng-hide{
+      transition:5s linear all;
+      opacity:0;
+  }
+}
+.full-height{
+  height:100% !important;
+}
+.md-whiteframe-glow-z2{
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.2), 0px 0 4px 3px rgba(0, 0, 0, 0.14), 0px 0px 8px 1px rgba(0, 0, 0, 0.12);
+}
+.nav-header{
+  background-color: rgb(202,206,212) !important;
+  color: #000;
+}
+.md-button-toggle .md-toggle-icon {
+  display: block;
+  margin-top: 14px;
+  font-size: 15px;
+  margin-left: auto;
+  speak: none;
+  vertical-align: middle;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+}
+.md-button-toggle .md-toggle-icon.toggled {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+}
+.menu-toggle-list {
+  background: #fff;
+  max-height: 2000px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 0.5s cubic-bezier(0.35, 0, 0.25, 1);
+  -webkit-transition-property: max-height;
+  -moz-transition: 0.5s cubic-bezier(0.35, 0, 0.25, 1);
+  -moz-transition-property: max-height;
+  transition: 0.5s cubic-bezier(0.35, 0, 0.25, 1);
+  transition-property: max-height;
+}
+.menu-toggle-list.ng-hide {
+  max-height: 0;
+}
+.docs-menu .menu-toggle-list a.md-button {
+  display: block;
+  font-weight: 400;
+  padding: 0 16px 0 32px;
+  text-transform: none;
+}

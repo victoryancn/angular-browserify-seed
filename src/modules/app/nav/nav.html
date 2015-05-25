@@ -1,0 +1,12 @@
+<md-sidenav class="md-sidenav-left md-whiteframe-z2  full-height"  md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" layout-fill>
+  <md-toolbar class="md-primary md-whiteframe-glow-z2">
+    <h1 class="md-toolbar-tools">大智信</h1>
+  </md-toolbar>
+  <md-content layout-padding="">
+    <ul>
+      <li ng-repeat="item in menu"  ng-include="'app/nav/nav_renderer.html'">
+      </li>
+    </ul>
+  </md-content>
+</md-sidenav>
+<button class="btn btn-primary btn-lg btn-block btn-white-opacity" ng-click="signOut()" >退出</button>
