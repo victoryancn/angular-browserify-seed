@@ -12,7 +12,7 @@ module.exports = gulp.task('watchify', function () {
     extensions: ['.coffee']
   });
 
-  
+
   bundler.transform(coffeeify);
   bundler.transform(browserifyShim);
 

@@ -19,9 +19,8 @@ var sassOptions = { // The options to be passed to sass()
 };
 
 module.exports = gulp.task('styles', function () {
-  return gulp.src(config.paths.src.styles)
-    .pipe(gulpif(release, sass(sassOptions).on('error', handleError), sass(sassOptions).on('error', handleError)))
-    .pipe(autoprefixer('last 1 version'))
+    return gulpif(release, sass(config.paths.src.styles,sassOptions).on('error', handleError), sass(config.paths.src.styles,sassOptions).on('error', handleError))
+    .pipe(autoprefixer('last 2 version'))
     .pipe(gulpif(release, csso()))
     .pipe(gulpif(release, rename(config.filenames.release.styles), rename(config.filenames.build.styles)))
     .pipe(gulpif(release, gulp.dest(config.paths.dest.release.styles), gulp.dest(config.paths.dest.build.styles)));
