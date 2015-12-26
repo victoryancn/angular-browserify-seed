@@ -8,7 +8,6 @@ module.exports = angular.module('app', [
   'ngCookies'
   require('../../../tmp/templates').name
   require('../common/index').name
-  require('./vehicle/index').name
+  require('./coupon/index').name
   require('./nav/index').name
 ])
-

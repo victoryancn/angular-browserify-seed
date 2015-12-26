@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html ng-app="app">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <!--styles-->
-  </head>
-  <body>
-  <div layout="row" class="full-height">
-    <div ng-controller="navCtrl" ng-include="'app/nav/nav.html'" class="index-side-bar full-height"  layout="column" >
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>佣金券</title>
+  <!--styles-->
+</head>
+
+<body>
+  <div layout="row" class="full-height">
+    <div ng-controller="navCtrl" ng-include="'app/nav/nav.html'" class="index-side-bar full-height" layout="column">
     </div>
     <div layout="column" flex>
-      <md-toolbar class="nav-header">
-      </md-toolbar>
       <md-content ui-view md-scroll-y flex layout-padding></md-content>
     </div>
   </div>
-    <!--scripts-->
-  </body>
+  <!--scripts-->
+</body>
+
 </html>

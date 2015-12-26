@@ -4,40 +4,29 @@
 module.exports = ($scope) ->
   $scope.menu = [
     {
-      label: '信息板'
+      label: '佣金券查询'
       url: ''
       main: true
       children: []
-    },
-    {
-      label: '测试'
-      url: ''
-      main: true
-      children: [
-        {
-          label : '测试1'
-#          iconClasses : 'fa  fa-circle-o'
-          url : '#/vehicle'
-        },{
-          label : '测试2'
-#          iconClasses : 'fa  fa-circle-o'
-          url : ''
-        }
-      ]
     },{
-      label: '测试3'
+      label: '佣金券发放'
       url: ''
       main: true
-      children: [
-        {
-          label : '测试4'
-#          iconClasses : 'fa  fa-circle-o'
-          url : ''
-        }
-      ]
+      children: []
     }
+#     ,{
+#       label: '测试3'
+#       url: ''
+#       main: true
+#       children: [
+#         {
+#           label : '测试4'
+# #          iconClasses : 'fa  fa-circle-o'
+#           url : ''
+#         }
+#       ]
+#     }
   ]
-  console.log 'hello'
 
   $scope.toggleSection = (item,index) ->
     if item.main is true and item.children.length>0
