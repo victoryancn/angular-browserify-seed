@@ -5,13 +5,15 @@ var watchify = require('watchify');
 var source = require('vinyl-source-stream');
 var browserifyShim = require('browserify-shim');
 var coffeeify = require('coffeeify');
+var browserify = require('browserify');
 
 module.exports = gulp.task('watchify', function () {
-  var bundler = watchify({
+  var bundler = watchify(browserify({
+    cache: {},
+    packageCache: {},
     entries: [config.paths.src.modules],
     extensions: ['.coffee']
-  });
-
+  }));
 
   bundler.transform(coffeeify);
   bundler.transform(browserifyShim);
@@ -19,7 +21,7 @@ module.exports = gulp.task('watchify', function () {
   bundler.on('update', rebundle);
 
   function rebundle() {
-    return bundler.bundle({ debug: true })
+    return bundler.bundle()
       .pipe(source(config.filenames.build.scripts))
       .pipe(gulp.dest(config.paths.dest.build.scripts));
   }

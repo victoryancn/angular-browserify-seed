@@ -37,6 +37,7 @@ module.exports = ($scope) ->
       ]
     }
   ]
+  console.log 'hello'
 
   $scope.toggleSection = (item,index) ->
     if item.main is true and item.children.length>0
@@ -61,4 +62,3 @@ module.exports = ($scope) ->
         item.active = false
       if item.children
         $scope.resetActive(item.children)
-

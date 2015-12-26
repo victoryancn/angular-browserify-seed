@@ -17,11 +17,16 @@ global.config = {
       templatesCompiled: TMP_FOLDER,
       livereload: [BUILD_FOLDER + '/**/*', '!' + BUILD_FOLDER + '/assets/**/*'],
       modules: './' + SRC_FOLDER + '/modules/index.coffee',
+      // css : [
+      //   './bower_components/angular-material/angular-material.min.css',
+      //   './bower_components/font-awesome/css/font-awesome.min.css',
+      //   './bower_components/animate.css/animate.min.css'
+      // ],
       copyFiles : [
         './bower_components/angular-material/angular-material.min.css',
         './bower_components/font-awesome/css/font-awesome.min.css',
-        './bower_components/font-awesome/fonts/*.*',
-        './bower_components/animate.css/animate.min.css'
+        './bower_components/animate.css/animate.min.css',
+        './bower_components/font-awesome/fonts/*.*'
       ]
     },
     dest: {

@@ -6,16 +6,12 @@ var runSequence = require('run-sequence');
 module.exports = gulp.task('default', function () {
   if (release) {
     runSequence(
-      'clean',
-      ['copy','index', 'styles', 'images', 'assets', 'templates', 'lint'],
-      'browserify',
-      ['minify', 'serve']
+      'clean', ['copy', 'index', 'styles', 'images', 'assets', 'templates', 'lint'],
+      'browserify', ['minify', 'serve']
     );
   } else {
     runSequence(
-      'clean',
-      ['copy','index', 'styles', 'images', 'assets', 'templates', 'lint'],
-      ['watchify', 'watch', 'serve']
+      'clean', ['copy', 'index', 'styles', 'images', 'assets', 'templates', 'lint', 'watchify'], ['watch', 'serve']
     );
   }
 });
