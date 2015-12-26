@@ -6,6 +6,7 @@ module.exports = angular.module('app', [
   'ngAria'
   'ngAnimate'
   'ngCookies'
+  'md.data.table'
   require('../../../tmp/templates').name
   require('../common/index').name
   require('./coupon/index').name

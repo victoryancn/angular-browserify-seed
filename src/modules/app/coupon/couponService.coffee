@@ -2,12 +2,338 @@
 module.exports = (API,$http)->
   couponList : (options, callback) ->
     return {
-      
-    }
-    # $http.get(API.VEHICLE_LIST,params : options)
-    # .success((data) ->
-    #   callback(data)
-    # )
-    # .error((data) ->
-    #   console.log data.message
-    # )
+      msg: null,
+      success: true,
+      result_code: "60000",
+      result_data: [
+        {
+          id: "88b1271c-a9f1-11e5-9c98-122378f04eb1",
+          type: "ACTIVITY_EBOOK_COMMISSION",
+          name: "交易体验券",
+          faceValue: 10,
+          currency: "CNY",
+          expiryPeriod: 14,
+          expiryDate: null,
+          label: "平安证券实盘交易时自动提示使用",
+          theme: "",
+          ctime: 1450929055000,
+          utime: null,
+          typeName: "电子书刊活动交易券"
+        },
+        {
+          id: "a51ab956-a396-11e5-9c98-122378f04eb1",
+          type: "BROKER_LOSS_DEDUCTION",
+          name: "亏损抵用券",
+          faceValue: 10,
+          currency: "CNY",
+          expiryPeriod: 0,
+          expiryDate: 1451404800000,
+          label: "出现亏损的买卖委托单补偿返现",
+          theme: "",
+          ctime: 1450230311000,
+          utime: null,
+          typeName: "券商亏损抵用券"
+        },
+        {
+          id: "9feea32a-a396-11e5-9c98-122378f04eb1",
+          type: "BROKER_LOSS_DEDUCTION",
+          name: "亏损抵用券",
+          faceValue: 20,
+          currency: "CNY",
+          expiryPeriod: 0,
+          expiryDate: 1451404800000,
+          label: "出现亏损的买卖委托单补偿返现",
+          theme: "",
+          ctime: 1450230302000,
+          utime: null,
+          typeName: "券商亏损抵用券"
+        },
+        {
+          id: "b54dabd0-89ab-11e5-8de0-c216267e07a7",
+          type: "ACTIVITY_LAGOU_COMMISSION",
+          name: "交易体验券",
+          faceValue: 5,
+          currency: "CNY",
+          expiryPeriod: 0,
+          expiryDate: 1448812800000,
+          label: "平安证券实盘交易时自动提示使用",
+          theme: "",
+          ctime: 1447380627000,
+          utime: null,
+          typeName: "拉勾网活动交易券"
+        },
+        {
+          id: "e83ab85e-8680-11e5-8de0-c216267e07a7",
+          type: "ACTIVITY_OLD_UID_COMMISSION",
+          name: "交易体验券",
+          faceValue: 5,
+          currency: "CNY",
+          expiryPeriod: 0,
+          expiryDate: 1451491200000,
+          label: "平安证券实盘交易时自动提示使用",
+          theme: "",
+          ctime: 1447032391000,
+          utime: null,
+          typeName: "老用户回馈交易券"
+        },
+        {
+          id: "d7728a6e-8136-11e5-ab39-347cd3aad944",
+          type: "ACTIVITY_OPENING_COMMISSION",
+          name: "交易体验券",
+          faceValue: 5,
+          currency: "CNY",
+          expiryPeriod: 0,
+          expiryDate: 1451404800000,
+          label: "平安证券实盘交易时自动提示使用",
+          theme: "",
+          ctime: 1446450824000,
+          utime: null,
+          typeName: "开户活动交易券"
+        },
+        {
+          id: "dceb3554-7d76-11e5-ab39-347cd3aad944",
+          type: "CNEX_COMMISSION",
+          name: "佣金券",
+          faceValue: 5,
+          currency: "CNY",
+          expiryPeriod: 0,
+          expiryDate: 1451491200000,
+          label: "实盘交易下单自动提示使用",
+          theme: "",
+          ctime: 1446038517000,
+          utime: null,
+          typeName: "A股通用交易券"
+        },
+        {
+          id: "a40dc954-7d76-11e5-ab39-347cd3aad944",
+          type: "CNEX_COMMISSION",
+          name: "佣金券",
+          faceValue: 5,
+          currency: "CNY",
+          expiryPeriod: 0,
+          expiryDate: 1451491200000,
+          label: "实盘交易下单自动提示使用",
+          theme: "",
+          ctime: 1446038421000,
+          utime: null,
+          typeName: "A股通用交易券"
+        },
+        {
+          id: "8a2f81f8-7d76-11e5-ab39-347cd3aad944",
+          type: "CNEX_COMMISSION",
+          name: "佣金券",
+          faceValue: 5,
+          currency: "CNY",
+          expiryPeriod: 0,
+          expiryDate: 1451491200000,
+          label: "实盘交易下单自动提示使用",
+          theme: "",
+          ctime: 1446038378000,
+          utime: null,
+          typeName: "A股通用交易券"
+        },
+        {
+          id: "663643e4-7d6d-11e5-ab39-347cd3aad944",
+          type: "CNEX_COMMISSION",
+          name: "佣金券",
+          faceValue: 5,
+          currency: "CNY",
+          expiryPeriod: 0,
+          expiryDate: 1451491200000,
+          label: "实盘交易下单自动提示使用",
+          theme: "",
+          ctime: 1446034452000,
+          utime: null,
+          typeName: "A股通用交易券"
+        },
+        {
+          id: "50a72944-7d6d-11e5-ab39-347cd3aad944",
+          type: "CNEX_COMMISSION",
+          name: "佣金券",
+          faceValue: 5,
+          currency: "CNY",
+          expiryPeriod: 0,
+          expiryDate: 1451491200000,
+          label: "实盘交易下单自动提示使用",
+          theme: "",
+          ctime: 1446034416000,
+          utime: null,
+          typeName: "A股通用交易券"
+        },
+        {
+          id: "258cf842-7d6d-11e5-ab39-347cd3aad944",
+          type: "CNEX_COMMISSION",
+          name: "佣金券",
+          faceValue: 5,
+          currency: "CNY",
+          expiryPeriod: 0,
+          expiryDate: 1451491200000,
+          label: "实盘交易下单自动提示使用",
+          theme: "",
+          ctime: 1446034343000,
+          utime: null,
+          typeName: "A股通用交易券"
+        },
+        {
+          id: "10b76d08-7d6d-11e5-ab39-347cd3aad944",
+          type: "CNEX_COMMISSION",
+          name: "佣金券",
+          faceValue: 5,
+          currency: "CNY",
+          expiryPeriod: 0,
+          expiryDate: 1451491200000,
+          label: "实盘交易下单自动提示使用",
+          theme: "",
+          ctime: 1446034309000,
+          utime: null,
+          typeName: "A股通用交易券"
+        },
+        {
+          id: "ee41f5fc-7d69-11e5-ab39-347cd3aad944",
+          type: "CNEX_COMMISSION",
+          name: "佣金券",
+          faceValue: 5,
+          currency: "CNY",
+          expiryPeriod: 0,
+          expiryDate: 1451491200000,
+          label: "实盘交易下单自动提示使用",
+          theme: "",
+          ctime: 1446032962000,
+          utime: null,
+          typeName: "A股通用交易券"
+        },
+        {
+          id: "b7923f8a-7d69-11e5-ab39-347cd3aad944",
+          type: "CNEX_COMMISSION",
+          name: "佣金券",
+          faceValue: 5,
+          currency: "CNY",
+          expiryPeriod: 0,
+          expiryDate: 1451491200000,
+          label: "实盘交易下单自动提示使用",
+          theme: "",
+          ctime: 1446032870000,
+          utime: null,
+          typeName: "A股通用交易券"
+        },
+        {
+          id: "7cea4ba2-7d69-11e5-ab39-347cd3aad944",
+          type: "CNEX_COMMISSION",
+          name: "佣金券",
+          faceValue: 5,
+          currency: "CNY",
+          expiryPeriod: 0,
+          expiryDate: 1451491200000,
+          label: "实盘交易下单自动提示使用",
+          theme: "",
+          ctime: 1446032772000,
+          utime: null,
+          typeName: "A股通用交易券"
+        },
+        {
+          id: "ba05b5a2-70a4-11e5-ab39-347cd3aad944",
+          type: "BROKER_COMMISSION",
+          name: "佣金券",
+          faceValue: 10,
+          currency: "CNY",
+          expiryPeriod: 0,
+          expiryDate: 1446134400000,
+          label: "券商实盘交易下单自动提示使用",
+          theme: "",
+          ctime: 1444628850000,
+          utime: null,
+          typeName: "券商交易券"
+        },
+        {
+          id: "b4c86418-70a4-11e5-ab39-347cd3aad944",
+          type: "BROKER_COMMISSION",
+          name: "佣金券",
+          faceValue: 5,
+          currency: "CNY",
+          expiryPeriod: 0,
+          expiryDate: 1446134400000,
+          label: "券商实盘交易下单自动提示使用",
+          theme: "",
+          ctime: 1444628841000,
+          utime: null,
+          typeName: "券商交易券"
+        },
+        {
+          id: "44bf28d4-5cf2-11e5-8f27-44a15be36242",
+          type: "CNEX_COMMISSION",
+          name: "佣金券",
+          faceValue: 5,
+          currency: "CNY",
+          expiryPeriod: 30,
+          expiryDate: null,
+          label: "实盘交易下单自动提示使用",
+          theme: "",
+          ctime: 1442463130000,
+          utime: null,
+          typeName: "A股通用交易券"
+        },
+        {
+          id: "36bee526-5cf2-11e5-8f27-44a15be36242",
+          type: "CNEX_COMMISSION",
+          name: "佣金券",
+          faceValue: 5,
+          currency: "CNY",
+          expiryPeriod: 0,
+          expiryDate: 1451491200000,
+          label: "实盘交易下单自动提示使用",
+          theme: "",
+          ctime: 1442463107000,
+          utime: null,
+          typeName: "A股通用交易券"
+        },
+        {
+          id: "4f6f1b20-5c54-11e5-8f27-44a15be36242",
+          type: "CNEX_COMMISSION",
+          name: "佣金券",
+          faceValue: 5,
+          currency: "CNY",
+          expiryPeriod: 30,
+          expiryDate: null,
+          label: "实盘交易下单自动提示使用",
+          theme: "",
+          ctime: 1442395288000,
+          utime: null,
+          typeName: "A股通用交易券"
+        },
+        {
+          id: "38e74a6c-5c54-11e5-8f27-44a15be36242",
+          type: "CNEX_COMMISSION",
+          name: "佣金券",
+          faceValue: 5,
+          currency: "CNY",
+          expiryPeriod: 0,
+          expiryDate: 1451491200000,
+          label: "实盘交易下单自动提示使用",
+          theme: "",
+          ctime: 1442395250000,
+          utime: null,
+          typeName: "A股通用交易券"
+        },
+        {
+          id: "dc84fae0-5bad-11e5-8f27-44a15be36242",
+          type: "CNEX_COMMISSION",
+          name: "佣金券",
+          faceValue: 5,
+          currency: "CNY",
+          expiryPeriod: 0,
+          expiryDate: 1451491200000,
+          label: "实盘交易下单自动提示使用",
+          theme: null,
+          ctime: 1442323799000,
+          utime: null,
+          typeName: "A股通用交易券"
+        }
+      ]
+  }
+  # $http.get(API.VEHICLE_LIST,params : options)
+  # .success((data) ->
+  #   callback(data)
+  # )
+  # .error((data) ->
+  #   console.log data.message
+  # )

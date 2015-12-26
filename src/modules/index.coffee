@@ -9,6 +9,7 @@ require 'angular-material'
 require 'angular-animate'
 require 'angular-aria'
 require 'angular-cookies'
+require 'angular-material-data-table'
 ###
 app entry point
 ###

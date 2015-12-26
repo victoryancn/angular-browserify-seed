@@ -26,7 +26,8 @@ global.config = {
         './bower_components/angular-material/angular-material.min.css',
         './bower_components/font-awesome/css/font-awesome.min.css',
         './bower_components/animate.css/animate.min.css',
-        './bower_components/font-awesome/fonts/*.*'
+        './bower_components/font-awesome/fonts/*.*',
+        './bower_components/angular-material-data-table/dist/md-data-table.min.css'
       ]
     },
     dest: {

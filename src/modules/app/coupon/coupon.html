@@ -1,4 +1,41 @@
-<md-input-container>
-  <label>请输入用户昵称：</label>
-  <input type="text" ng-model="user.name">
-</md-input-container>
+  <md-input-container>
+    <label>请输入用户昵称</label>
+    <input ng-model="user.company">
+  </md-input-container>
+  <md-button class="md-fab md-mini md-primary">
+    <md-icon md-font-icon="fa fa-search"></md-icon>
+  </md-button>
+<md-content laout="column" flex>
+  <md-card>
+    <md-data-table-container>
+      <table md-data-table>
+        <thead md-order="query.order" md-trigger="onOrderChange">
+          <tr>
+            <th name="id" order-by="id"></th>
+            <th numeric name="type" order-by="type"></th>
+            <th numeric name="name" order-by="name"></th>
+            <th numeric name="faceValue" order-by="faceValue"></th>
+            <th numeric name="currency" order-by="currency"></th>
+            <th numeric name="expiryPeriod" order-by="expiryPeriod"></th>
+            <th numeric name="expiryDate" order-by="expiryDate"></th>
+            <th numeric name="ctime" order-by="ctime"></th>
+            <th numeric name="typeName" order-by="typeName"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr md-auto-select ng-repeat="item in data">
+            <td>{{item.id}}</td>
+            <td>{{item.type}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.faceValue}}</td>
+            <td>{{item.currency}}</td>
+            <td>{{item.expiryPeriod | date :'yyyy-MM-dd'}}</td>
+            <td>{{item.expiryDate | date :'yyyy-MM-dd'}}</td>
+            <td>{{item.ctime | date :'yyyy-MM-dd'}}</td>
+            <td>{{item.typeName}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </md-data-table-container>
+  </md-card>
+</md-content>

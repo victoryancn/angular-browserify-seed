@@ -5,12 +5,12 @@ module.exports = ($scope) ->
   $scope.menu = [
     {
       label: '佣金券查询'
-      url: ''
+      url: '#/coupon'
       main: true
       children: []
     },{
       label: '佣金券发放'
-      url: ''
+      url: '#/coupon-send'
       main: true
       children: []
     }

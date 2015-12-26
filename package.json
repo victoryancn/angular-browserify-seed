@@ -4,6 +4,7 @@
     "node": ">=0.10.0"
   },
   "devDependencies": {
+    "angular-data-table": "^0.4.11",
     "browser-sync": "^2.10.1",
     "browserify": "^12.0.1",
     "browserify-shim": "^3.6.0",
@@ -44,7 +45,8 @@
     "angular-animate": "./bower_components/angular-animate/angular-animate.min.js",
     "angular-material": "./bower_components/angular-material/angular-material.min.js",
     "angular-aria": "./bower_components/angular-aria/angular-aria.min.js",
-    "angular-cookies": "./bower_components/angular-cookies/angular-cookies.js"
+    "angular-cookies": "./bower_components/angular-cookies/angular-cookies.js",
+    "angular-material-data-table": "./bower_components/angular-material-data-table/dist/md-data-table.min.js"
   },
   "browserify-shim": {},
   "dependencies": {}
